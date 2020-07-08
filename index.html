@@ -20,7 +20,7 @@
 	<!-- BEGIN HEADER -->
 	<header class="header">
 		
-		<div class="wrapper ">
+		<div class="container ">
 			<a href="#" class="mm-toggle burger header__burger">
 				<div class="burger__icon"></div>
 			</a>
@@ -42,15 +42,20 @@
 	
 			<div class="lang">
 				<button class="lang__button">
-					<img src="img/rus.jpg" alt=""> рус
+					<img src="img/rus.jpg" alt="">
+					<span>рус</span>
 				</button>
 				<ul class="lang__list" style="display: none;">
-					<li><a href="#"><img src="img/rus.jpg" alt=""> рус</span></a></li>
-					<li><a href="#"><img src="img/ua.jpg" alt=""> укр</span></a></li>
+					<li><a href="#"><img src="img/rus.jpg" alt=""> <span>рус</span></a></li>
+					<li><a href="#"><img src="img/ua.jpg" alt=""> <span>укр</span></a></li>
 				</ul>
 			</div>
 	
-			<div class="header__basket basket">
+			<button class="search-button">
+				<svg class="icon icon-loupe"><use xlink:href="img/sprite.svg#loupe"></use></svg>
+			</button>
+	
+			<div class="header__basket basket ">
 				<div class="basket__price">€0</div>
 				<a href="#" class="basket__button">
 					<svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg>
@@ -101,7 +106,7 @@
 
 	<!-- BEGIN MAIN -->
 	<main class="main">
-		<div class="wrapper">
+		<div class="container">
 			<div class="wrap">
 				<h1 class="title">Магазин здоровых продуктов</h1>
 			</div>
@@ -129,7 +134,7 @@
 			<!-- SEARCH BLOCK EOF   -->
 				
 			<!-- BEGIN ABOUT -->
-			<div class="section-about">
+			<div class="section-about hidden-md">
 				<article class="about">
 					<div class="about__img"><img src="img/about-img.jpg" alt=""></div>
 					<h6>О компании </h6>
@@ -193,346 +198,364 @@
 					<div class="ct-content__wrap">
 						<!-- BEGIN CARDS LIST -->
 						<div class="ct-content__left">
-							<div class="card-list">
-								<div class="card">
-									<div class="card__img">
-										<a href="#">
-											<img src="img/card-img-1.jpg" alt="">
-											<div class="card__more">
-												<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
-											</div>
-										</a>
-									</div>
-									<div class="card__body">
-										<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
-
-										<div class="card__grid">
-											<div class="rating">
-												<div class="rating__stars">
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+							<div class="card-list row">
+								<div class="col-xl-4 col-lg-6 col-md-4">
+									<div class="card">
+										<div class="card__img">
+											<a href="#">
+												<img src="img/card-img-1.jpg" alt="">
+												<div class="card__more">
+													<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
 												</div>
-												<div class="rating__value">(0)</div>
-											</div>
-
-											<div class="card__buy">
-												<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
-												
-											</div>
+											</a>
 										</div>
-										<div class="card__grid">
-											<div class="card__price">
-												<span class="price-value price-value--sale">7€</span>
-												<span class="price-old">13€</span>
-											</div>
-											<div class="card__aviable">в наличии</div>
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card__img">
-										<a href="#">
-											<img src="img/card-img-11.jpg" alt="">
-											<div class="card__more">
-												<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
-											</div>
-										</a>
-									</div>
-									<div class="card__body">
-										<div class="card__title"><a href="#">Missha, Perfect Cover BB Cream, BB-крем, SPF 42 PA+++, оттенок 27 медовый бежевый</a></div>
+										<div class="card__body">
+											<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
 
-										<div class="card__grid">
-											<div class="card__price">
-												<span class="price-value">10€</span>
-											</div>
+											<div class="card__grid">
+												<div class="rating">
+													<div class="rating__stars">
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+													</div>
+													<div class="rating__value">(0)</div>
+												</div>
 
-											<div class="card__buy">
-												
-												<div class="counter">
-													<span class="counter__input">1</span>
+												<div class="card__buy">
 													<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
-													<button class="counter__btn counter__btn--minus js-minus" type="button">-</button>
-													<button class="counter__btn counter__btn--plus js-plus" type="button">+</button>
+													
 												</div>
 											</div>
-										</div>
-										<div class="card__grid">
-											
-											<div class="card__aviable card__aviable--red">нет на складе</div>
+											<div class="card__grid">
+												<div class="card__price">
+													<span class="price-value price-value--sale">7€</span>
+													<span class="price-old">13€</span>
+												</div>
+												<div class="card__aviable">в наличии</div>
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card">
-									<div class="card__img">
-										<a href="#">
-											<img src="img/card-img-12.jpg" alt="">
-											<div class="card__more">
-												<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
-											</div>
-										</a>
-									</div>
-									<div class="card__body">
-										<div class="card__title"><a href="#">Heimish, Dailism, тушь без грязных пятен, 30 г</a></div>
-
-										<div class="card__grid">
-											<div class="rating">
-												<div class="rating__stars">
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+								<div class="col-xl-4 col-lg-6 col-md-4">
+									<div class="card">
+										<div class="card__img">
+											<a href="#">
+												<img src="img/card-img-11.jpg" alt="">
+												<div class="card__more">
+													<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
 												</div>
-												<div class="rating__value">(0)</div>
-											</div>
+											</a>
+										</div>
+										<div class="card__body">
+											<div class="card__title"><a href="#">Missha, Perfect Cover BB Cream, BB-крем, SPF 42 PA+++, оттенок 27 медовый бежевый</a></div>
 
-											<div class="card__buy">
-												<div class="counter">
-													<span class="counter__input">13</span>
+											<div class="card__grid">
+												<div class="card__price">
+													<span class="price-value">10€</span>
+												</div>
+
+												<div class="card__buy">
+													
+													<div class="counter">
+														<span class="counter__input">1</span>
+														<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
+														<button class="counter__btn counter__btn--minus js-minus" type="button">-</button>
+														<button class="counter__btn counter__btn--plus js-plus" type="button">+</button>
+													</div>
+												</div>
+											</div>
+											<div class="card__grid">
+												
+												<div class="card__aviable card__aviable--red">нет на складе</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-6 col-md-4">
+									<div class="card">
+										<div class="card__img">
+											<a href="#">
+												<img src="img/card-img-12.jpg" alt="">
+												<div class="card__more">
+													<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
+												</div>
+											</a>
+										</div>
+										<div class="card__body">
+											<div class="card__title"><a href="#">Heimish, Dailism, тушь без грязных пятен, 30 г</a></div>
+
+											<div class="card__grid">
+												<div class="rating">
+													<div class="rating__stars">
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+													</div>
+													<div class="rating__value">(0)</div>
+												</div>
+
+												<div class="card__buy">
+													<div class="counter">
+														<span class="counter__input">13</span>
+														<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
+														<button class="counter__btn counter__btn--minus js-minus" type="button">-</button>
+														<button class="counter__btn counter__btn--plus js-plus" type="button">+</button>
+													</div>
+													
+												</div>
+											</div>
+											<div class="card__grid">
+												<div class="card__price">
+													<span class="price-value price-value--sale">3€</span>
+													<span class="price-old">5€</span>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-6 col-md-4">
+									<div class="card">
+										<div class="card__img">
+											<a href="#">
+												<img src="img/card-img-13.jpg" alt="">
+												<div class="card__more">
+													<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
+												</div>
+											</a>
+										</div>
+										<div class="card__body">
+											<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
+
+											<div class="card__grid">
+												<div class="rating">
+													<div class="rating__stars">
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+													</div>
+													<div class="rating__value">(22)</div>
+												</div>
+
+												<div class="card__buy">
 													<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
-													<button class="counter__btn counter__btn--minus js-minus" type="button">-</button>
-													<button class="counter__btn counter__btn--plus js-plus" type="button">+</button>
+													
+												</div>
+											</div>
+											<div class="card__grid">
+												<div class="card__price">
+													<span class="price-value">12€</span>
+													
 												</div>
 												
 											</div>
-										</div>
-										<div class="card__grid">
-											<div class="card__price">
-												<span class="price-value price-value--sale">3€</span>
-												<span class="price-old">5€</span>
-											</div>
-											
 										</div>
 									</div>
 								</div>
-								<div class="card">
-									<div class="card__img">
-										<a href="#">
-											<img src="img/card-img-13.jpg" alt="">
-											<div class="card__more">
-												<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
-											</div>
-										</a>
-									</div>
-									<div class="card__body">
-										<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
-
-										<div class="card__grid">
-											<div class="rating">
-												<div class="rating__stars">
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+								<div class="col-xl-4 col-lg-6 col-md-4">
+									<div class="card">
+										<div class="card__img">
+											<a href="#">
+												<img src="img/card-img-14.jpg" alt="">
+												<div class="card__more">
+													<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
 												</div>
-												<div class="rating__value">(22)</div>
-											</div>
-
-											<div class="card__buy">
-												<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
-												
-											</div>
+											</a>
 										</div>
-										<div class="card__grid">
-											<div class="card__price">
-												<span class="price-value">12€</span>
+										<div class="card__body">
+											<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
+
+											<div class="card__grid">
+												<div class="rating">
+													<div class="rating__stars">
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+													</div>
+													<div class="rating__value">(22)</div>
+												</div>
+
+												<div class="card__buy">
+													<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
+													
+												</div>
+											</div>
+											<div class="card__grid">
+												<div class="card__price">
+													<span class="price-value">12€</span>
+													
+												</div>
 												
 											</div>
-											
 										</div>
 									</div>
 								</div>
-								<div class="card">
-									<div class="card__img">
-										<a href="#">
-											<img src="img/card-img-14.jpg" alt="">
-											<div class="card__more">
-												<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
-											</div>
-										</a>
-									</div>
-									<div class="card__body">
-										<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
-
-										<div class="card__grid">
-											<div class="rating">
-												<div class="rating__stars">
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+								<div class="col-xl-4 col-lg-6 col-md-4">
+									<div class="card">
+										<div class="card__img">
+											<a href="#">
+												<img src="img/card-img-15.jpg" alt="">
+												<div class="card__more">
+													<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
 												</div>
-												<div class="rating__value">(22)</div>
-											</div>
-
-											<div class="card__buy">
-												<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
-												
-											</div>
+											</a>
 										</div>
-										<div class="card__grid">
-											<div class="card__price">
-												<span class="price-value">12€</span>
+										<div class="card__body">
+											<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
+
+											<div class="card__grid">
+												<div class="rating">
+													<div class="rating__stars">
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+													</div>
+													<div class="rating__value">(22)</div>
+												</div>
+
+												<div class="card__buy">
+													<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
+													
+												</div>
+											</div>
+											<div class="card__grid">
+												<div class="card__price">
+													<span class="price-value">12€</span>
+													
+												</div>
 												
 											</div>
-											
 										</div>
 									</div>
 								</div>
-								<div class="card">
-									<div class="card__img">
-										<a href="#">
-											<img src="img/card-img-15.jpg" alt="">
-											<div class="card__more">
-												<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
-											</div>
-										</a>
-									</div>
-									<div class="card__body">
-										<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
-
-										<div class="card__grid">
-											<div class="rating">
-												<div class="rating__stars">
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+								<div class="col-xl-4 col-lg-6 col-md-4">
+									<div class="card">
+										<div class="card__img">
+											<a href="#">
+												<img src="img/card-img-13.jpg" alt="">
+												<div class="card__more">
+													<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
 												</div>
-												<div class="rating__value">(22)</div>
-											</div>
-
-											<div class="card__buy">
-												<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
-												
-											</div>
+											</a>
 										</div>
-										<div class="card__grid">
-											<div class="card__price">
-												<span class="price-value">12€</span>
+										<div class="card__body">
+											<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
+
+											<div class="card__grid">
+												<div class="rating">
+													<div class="rating__stars">
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+													</div>
+													<div class="rating__value">(22)</div>
+												</div>
+
+												<div class="card__buy">
+													<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
+													
+												</div>
+											</div>
+											<div class="card__grid">
+												<div class="card__price">
+													<span class="price-value">12€</span>
+													
+												</div>
 												
 											</div>
-											
 										</div>
 									</div>
 								</div>
-								<div class="card">
-									<div class="card__img">
-										<a href="#">
-											<img src="img/card-img-13.jpg" alt="">
-											<div class="card__more">
-												<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
-											</div>
-										</a>
-									</div>
-									<div class="card__body">
-										<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
-
-										<div class="card__grid">
-											<div class="rating">
-												<div class="rating__stars">
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+								<div class="col-xl-4 col-lg-6 col-md-4">
+									<div class="card">
+										<div class="card__img">
+											<a href="#">
+												<img src="img/card-img-14.jpg" alt="">
+												<div class="card__more">
+													<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
 												</div>
-												<div class="rating__value">(22)</div>
-											</div>
-
-											<div class="card__buy">
-												<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
-												
-											</div>
+											</a>
 										</div>
-										<div class="card__grid">
-											<div class="card__price">
-												<span class="price-value">12€</span>
+										<div class="card__body">
+											<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
+
+											<div class="card__grid">
+												<div class="rating">
+													<div class="rating__stars">
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+													</div>
+													<div class="rating__value">(22)</div>
+												</div>
+
+												<div class="card__buy">
+													<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
+													
+												</div>
+											</div>
+											<div class="card__grid">
+												<div class="card__price">
+													<span class="price-value">12€</span>
+													
+												</div>
 												
 											</div>
-											
 										</div>
 									</div>
 								</div>
-								<div class="card">
-									<div class="card__img">
-										<a href="#">
-											<img src="img/card-img-14.jpg" alt="">
-											<div class="card__more">
-												<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
-											</div>
-										</a>
-									</div>
-									<div class="card__body">
-										<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
-
-										<div class="card__grid">
-											<div class="rating">
-												<div class="rating__stars">
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+								<div class="col-xl-4 col-lg-6 col-md-4">
+									<div class="card">
+										<div class="card__img">
+											<a href="#">
+												<img src="img/card-img-15.jpg" alt="">
+												<div class="card__more">
+													<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
 												</div>
-												<div class="rating__value">(22)</div>
-											</div>
-
-											<div class="card__buy">
-												<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
-												
-											</div>
+											</a>
 										</div>
-										<div class="card__grid">
-											<div class="card__price">
-												<span class="price-value">12€</span>
-												
-											</div>
-											
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card__img">
-										<a href="#">
-											<img src="img/card-img-15.jpg" alt="">
-											<div class="card__more">
-												<svg class="icon icon-faq-button"><use xlink:href="img/sprite.svg#faq-button"></use></svg>Подробнее о товаре
-											</div>
-										</a>
-									</div>
-									<div class="card__body">
-										<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
+										<div class="card__body">
+											<div class="card__title"><a href="#">Physicians Formula, Eye Booster, ультратонкая жидкая подводка для </a></div>
 
-										<div class="card__grid">
-											<div class="rating">
-												<div class="rating__stars">
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
-													<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+											<div class="card__grid">
+												<div class="rating">
+													<div class="rating__stars">
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs-full"><use xlink:href="img/sprite.svg#signs-full"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+														<svg class="icon icon-signs"><use xlink:href="img/sprite.svg#signs"></use></svg>
+													</div>
+													<div class="rating__value">(22)</div>
 												</div>
-												<div class="rating__value">(22)</div>
-											</div>
 
-											<div class="card__buy">
-												<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
+												<div class="card__buy">
+													<a href="#" class="card__basket"><svg class="icon icon-buy"><use xlink:href="img/sprite.svg#buy"></use></svg></a>
+													
+												</div>
+											</div>
+											<div class="card__grid">
+												<div class="card__price">
+													<span class="price-value">12€</span>
+													
+												</div>
 												
 											</div>
-										</div>
-										<div class="card__grid">
-											<div class="card__price">
-												<span class="price-value">12€</span>
-												
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -961,6 +984,29 @@
 			</div>
 			<!-- NEWS SLIDER EOF   -->
 
+			<!-- BEGIN ABOUT -->
+			<div class="section-about visible-md">
+				<article class="about">
+					<div class="about__img"><img src="img/about-img.jpg" alt=""></div>
+					<h6>О компании </h6>
+
+					<p>Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет оценить значение направлений прогрессивного развития. Задача организации, в особенности же рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации.</p>
+
+					<h6>Доставка</h6>
+
+					<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение форм развития. Товарищи!  деятельности обеспечивает широкому кругу (специалистов) участие в </p>
+
+					<h6>Оплата</h6>
+
+					<p>формировании систем массового участия. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании существенных  и административных </p>
+
+					<p>Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет оценить значение направлений прогрессивного развития. Задача организации, в особенности же рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации.</p>
+
+					<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение форм развития. Товарищи!  деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании существенных и административных условий. Таким образом реализация намеченных плановых заданий способствует подготовки и реализации форм развития.</p>
+				</article>
+			</div>
+			<!-- ABOUT EOF   -->
+
 			<!-- BEGIN REVIEWS SLIDER -->
 			<div class="section">
 				<div class="section__head d-flex align-items-start">
@@ -1117,7 +1163,7 @@
 				<h2>Контакты</h2>
 
 				<div class="contacts-wrap row">
-					<div class="col-lg-4 ">
+					<div class="col-xl-4 col-lg-3">
 						<div class="contacts-item">
 							<svg class="icon icon-pin"><use xlink:href="img/sprite.svg#pin"></use></svg>
 							<span class="contacts-item__txt">Хлорака</span>
@@ -1134,7 +1180,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 ">
+					<div class="col-xl-3 col-lg-4 ">
 						<div class="contacts-item">
 							<svg class="icon icon-address"><use xlink:href="img/sprite.svg#address"></use></svg>
 							<span class="contacts-item__txt">Mikinon, 1</span> <a href="#" class="link">как проехать?</a>
@@ -1149,7 +1195,7 @@
 							</span>
 						</div>
 					</div>
-					<div class="col-lg-4 ">
+					<div class="col-xl-4 col-lg-5 ">
 						<div class="contacts-item">
 							<div class="d-flex align-items-center">
 								<div class="social social--lg">
