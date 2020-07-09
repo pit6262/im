@@ -19,7 +19,6 @@
 
 	<!-- BEGIN HEADER -->
 	<header class="header">
-		
 		<div class="container ">
 			<a href="#" class="mm-toggle burger header__burger">
 				<div class="burger__icon"></div>
@@ -102,6 +101,13 @@
 			<div class="mobile-navbar__overlay mm-toggle"></div>
 		</div>
 	</header>
+	
+	<div class="fix-menu">
+		<div class="container">
+			<a href="#" class="btn-g"><svg class="icon icon--l icon--info icon-grid"><use xlink:href="img/sprite.svg#grid"></use></svg>Каталог</a>
+			<a href="#" class="btn-g btn-g--icon"><svg class="icon icon--info icon-filter"><use xlink:href="img/sprite.svg#filter"></use></svg></a>
+		</div>
+	</div>
 	<!-- HEADER EOF   -->
 
 	<!-- BEGIN MAIN -->
@@ -199,7 +205,7 @@
 						<!-- BEGIN CARDS LIST -->
 						<div class="ct-content__left">
 							<div class="card-list row">
-								<div class="col-xl-4 col-lg-6 col-md-4">
+								<div class="col-xl-4 col-sm-6">
 									<div class="card">
 										<div class="card__img">
 											<a href="#">
@@ -239,7 +245,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-xl-4 col-lg-6 col-md-4">
+								<div class="col-xl-4 col-sm-6">
 									<div class="card">
 										<div class="card__img">
 											<a href="#">
@@ -274,7 +280,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-xl-4 col-lg-6 col-md-4">
+								<div class="col-xl-4 col-sm-6">
 									<div class="card">
 										<div class="card__img">
 											<a href="#">
@@ -319,7 +325,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-xl-4 col-lg-6 col-md-4">
+								<div class="col-xl-4 col-sm-6">
 									<div class="card">
 										<div class="card__img">
 											<a href="#">
@@ -359,7 +365,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-xl-4 col-lg-6 col-md-4">
+								<div class="col-xl-4 col-sm-6">
 									<div class="card">
 										<div class="card__img">
 											<a href="#">
@@ -399,7 +405,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-xl-4 col-lg-6 col-md-4">
+								<div class="col-xl-4 col-sm-6">
 									<div class="card">
 										<div class="card__img">
 											<a href="#">
@@ -439,7 +445,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-xl-4 col-lg-6 col-md-4">
+								<div class="col-xl-4 col-sm-6">
 									<div class="card">
 										<div class="card__img">
 											<a href="#">
@@ -479,7 +485,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-xl-4 col-lg-6 col-md-4">
+								<div class="col-xl-4 col-sm-6">
 									<div class="card">
 										<div class="card__img">
 											<a href="#">
@@ -519,7 +525,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-xl-4 col-lg-6 col-md-4">
+								<div class="col-xl-4 col-sm-6">
 									<div class="card">
 										<div class="card__img">
 											<a href="#">
@@ -1163,7 +1169,7 @@
 				<h2>Контакты</h2>
 
 				<div class="contacts-wrap row">
-					<div class="col-xl-4 col-lg-3">
+					<div class="col-xl-4 col-lg-3 col-md-6">
 						<div class="contacts-item">
 							<svg class="icon icon-pin"><use xlink:href="img/sprite.svg#pin"></use></svg>
 							<span class="contacts-item__txt">Хлорака</span>
@@ -1180,7 +1186,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 ">
+					<div class="col-xl-3 col-lg-4 col-md-6">
 						<div class="contacts-item">
 							<svg class="icon icon-address"><use xlink:href="img/sprite.svg#address"></use></svg>
 							<span class="contacts-item__txt">Mikinon, 1</span> <a href="#" class="link">как проехать?</a>
@@ -1195,9 +1201,9 @@
 							</span>
 						</div>
 					</div>
-					<div class="col-xl-4 col-lg-5 ">
-						<div class="contacts-item">
-							<div class="d-flex align-items-center">
+					<div class="col-xl-4 col-lg-5 col-md-6">
+						<div class="contacts-item contacts-item--n-icon">
+							<div class="d-sm-flex align-items-center">
 								<div class="social social--lg">
 									<a href="#" class="social__btn"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#facebook"></use></svg></a>
 									<a href="#" class="social__btn"><svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#instagram"></use></svg></a>
@@ -1218,17 +1224,17 @@
 	<!-- BEGIN FOOTER -->
 	<footer class="footer">
 		
-		<div class="wrapper">
-			<div class="footer__wrap">
-				<div class="footer__item">
-					<div class="footer__txt">Создано на базе </div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 footer__item">
+					<span class="footer__txt">Создано на базе </span>
 					<div class="footer__logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
 				</div>
-				<div class="footer__item">
-					<div class="footer__txt"><a href="#">Сообщить об ошибке</a></div>
+				<div class="col-md-4 footer__item text-center">
+					<span class="footer__txt"><a href="#">Сообщить об ошибке</a></span>
 				</div>
-				<div class="footer__item">
-					<div class="footer__txt"><a href="#">Политика <br>конфеденциальности</a></div>
+				<div class="col-md-4 footer__item text-right">
+					<span class="footer__txt"><a href="#">Политика <br>конфеденциальности</a></span>
 				</div>
 			</div>
 		</div>
