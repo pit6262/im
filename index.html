@@ -50,7 +50,7 @@
 				</ul>
 			</div>
 	
-			<button class="search-button">
+			<button class="search-button open-search">
 				<svg class="icon icon-loupe"><use xlink:href="img/sprite.svg#loupe"></use></svg>
 			</button>
 	
@@ -80,7 +80,7 @@
 							<a href="#" class="mobile-menu__link">Главная</a>
 						</li>
 						<li class="mobile-menu__item">
-							<a href="#" class="mobile-menu__link">Каталог</a>
+							<a href="#" class="mobile-menu__link">О магазине</a>
 						</li>
 						<li class="mobile-menu__item">
 							<a href="#" class="mobile-menu__link">Контакты</a>
@@ -89,12 +89,12 @@
 				</div>
 				<div class="mobile-navbar__footer">
 					<div class="phone">
-						<a href="tel:" class="phone__link">+7 (980) 987 82 92</a>
+						<a href="tel:30009990022" class="phone__link">+3 (000) 999-00-22</a>
 					</div>
 					<div class="social">
-						<a href="#" class="social__link" target="_blank">y</a>
-						<a href="#" class="social__link" target="_blank">v</a>
-						<a href="#" class="social__link" target="_blank">t</a>
+						<a href="#" class="social__btn"><svg class="icon icon-viber"><use xlink:href="img/sprite.svg#viber"></use></svg></a>
+						<a href="#" class="social__btn"><svg class="icon icon-whatsapp"><use xlink:href="img/sprite.svg#whatsapp"></use></svg></a>
+						<a href="#" class="social__btn"><svg class="icon icon-telegram"><use xlink:href="img/sprite.svg#telegram"></use></svg></a>
 					</div>
 				</div>
 			</div>
@@ -104,8 +104,68 @@
 	
 	<div class="fix-menu">
 		<div class="container">
-			<a href="#" class="btn-g"><svg class="icon icon--l icon--info icon-grid"><use xlink:href="img/sprite.svg#grid"></use></svg>Каталог</a>
-			<a href="#" class="btn-g btn-g--icon"><svg class="icon icon--info icon-filter"><use xlink:href="img/sprite.svg#filter"></use></svg></a>
+			<div class="fix-menu__button">
+				<a href="#" class="btn-g open-nav"><svg class="icon icon--l icon--info icon-grid"><use xlink:href="img/sprite.svg#grid"></use></svg>Каталог</a>
+				<a href="#" class="btn-g btn-g--icon open-filter"><svg class="icon icon--info icon-filter"><use xlink:href="img/sprite.svg#filter"></use></svg></a>
+			</div>
+	
+			<div class="fix-nav">
+				<ul class="ct-menu">
+					<li class="ct-menu__item ct-item">
+						<a href="#" class="ct-menu__link">Продукты</a>
+						<ul>
+							<li><a href="#">Мыло</a></li>
+							<li><a href="#">Средства для волос</a></li>
+						</ul>
+					</li>
+					<li class="ct-menu__item ct-item">
+						<a href="#" class="ct-menu__link">Уход и косметика</a>
+						<ul >
+							
+							<li><a href="#">Мыло</a></li>
+							<li><a href="#">Средства для волос</a></li>
+							<li class="is-active"><a href="#">Декоративная косметика</a></li>
+							<li><a href="#">Уход за полостью рта</a></li>
+							<li><a href="#">Личная гигиена</a></li>
+							
+						</ul>
+					</li>
+					<li class="ct-menu__item ct-item">
+						<a href="#" class="ct-menu__link ct-item">Для уборки</a>
+						<ul>
+							<li><a href="#">Мыло</a></li>
+							<li><a href="#">Средства для волос</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="fix-filter">
+				<div class="ct-filter">
+					<ul class="ct-filter-menu">
+						<li><a href="#">Язык продавца <span class="caret"></span></a></li>
+						<li><a href="#">По цене <span class="caret"></span></a></li>
+						<li><a href="#">По рейтингу <span class="caret"></span></a></li>
+						<li><a href="#" class="is-active">Без глютена <span class="caret"></span></a></li>
+						<li><a href="#" class="is-active">Без сахара <span class="caret"></span></a></li>
+						<li><a href="#" class="is-active">Только акции <span class="caret"></span></a></li>
+					</ul>
+	
+					<div class="ct-filter__title">Цена, €</div>
+					<div class="range">
+						<div class="range__row">
+							<div class="range__item">
+								<input type="text" class="rangefrom" value="4"/>
+							</div>
+							<div class="range__devider"></div>
+							<div class="range__item">
+								<input type="text" class="rangeto" value="52"/>
+							</div>
+						</div>
+						<div class="range-slider range-scroll"></div>
+					</div>
+					
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- HEADER EOF   -->
@@ -118,7 +178,7 @@
 			</div>
 			
 			<!-- BEGIN SEARCH BLOCK -->
-			<div class="search-block">
+			<div class="search-block search-box">
 				<div class="search-block__form">
 					<form action="#">
 						<input type="text" placeholder="Найти продукт" class="search-block__input">
@@ -136,6 +196,7 @@
 						<li><a href="#"><strong>Не нашли что искали?</strong></a></li>
 					</ul>
 				</div>
+				<div class="search-block__close close-search"></div>
 			</div>
 			<!-- SEARCH BLOCK EOF   -->
 				
@@ -616,14 +677,14 @@
 								<div class="range">
 									<div class="range__row">
 										<div class="range__item">
-											<input type="text" id="rangefrom" value="4"/>
+											<input type="text" class="rangefrom" value="4"/>
 										</div>
 										<div class="range__devider"></div>
 										<div class="range__item">
-											<input type="text" id="rangeto" value="52"/>
+											<input type="text" class="rangeto" value="52"/>
 										</div>
 									</div>
-									<div id="range" class="range-scroll"></div>
+									<div class="range-slider range-scroll"></div>
 								</div>
 								
 							</div>
